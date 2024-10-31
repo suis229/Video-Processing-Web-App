@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload Web Application</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ファイルアップロードと処理</h1>
+    <form id="uploadForm">
+      <label for="file">ファイルを選択:</label>
+      <input type="file" id="file" name="file" required><br><br>
+
+      <label for="operation">操作を選択:</label>
+      <select id="operation" name="operation" required>
+        <option value="1">動画ファイルの圧縮</option>
+        <option value="2">動画の解像度の変更</option>
+        <option value="3">動画のアスペクト比の変更</option>
+        <option value="4">動画をオーディオに変換</option>
+        <option value="5">時間範囲でGIFの作成</option>
+      </select><br><br>
+
+      <div id="additionalOptions"></div>
+
+      <button type="submit">アップロードと処理</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
