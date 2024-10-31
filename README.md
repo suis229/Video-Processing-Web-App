@@ -2,6 +2,9 @@
 
 このアプリケーションは、以前作成した Video Processor リポジトリの内容をWebアプリケーションとしたものです。
 Flaskを使用して動画ファイルをアップロードし、さまざまな処理（圧縮、解像度変更、アスペクト比変更、オーディオ抽出、GIF作成）を行うことができます。
+<div style="text-align: center;">
+    <img src="images/flask_video_processor_1.png" alt="screen1" width="250">
+</div>
 
 ## 必要条件
 
